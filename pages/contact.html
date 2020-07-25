@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Suraksha Force</title>
+    <link rel="stylesheet" href="../css/contact.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  </head>
+  <body>
+    <section class="header">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="../index.html"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="../index.html"><i class="fas fa-home"></i>Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/about.html">About-Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact-Us</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </section>
+
+    <section class="section-2">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 custom-design">
+
+            <div class="col-lg-6 custom-design-1" data-aos="zoom-in" data-aos-duration="1700">
+              <img src="../images/aid-care-close-up-1516645.jpg" style="Width:100%; height:500px;">
+            </div>
+
+            <div class="col-lg-6 custom-design-2" data-aos="fade-down" data-aos-duration="1700">
+                <nav>
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                      <a class="nav-item nav-link custom-nav-1 active" id="nav-login-tab" data-toggle="tab" href="#nav-login" role="tab" aria-controls="nav-login" aria-selected="true">Log-in</a>
+                      <a class="nav-item nav-link custom-nav-2" id="nav-signup-tab" data-toggle="tab" href="#nav-signup" role="tab" aria-controls="nav-signup" aria-selected="false">Sign-up</a>
+                    </div>
+                  </nav>
+                  <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="nav-login" role="tabpanel" aria-labelledby="nav-login-tab">
+                        <form class="col-lg-12 mt-4">
+                            <div class="form-group">
+                              <label for="exampleInputEmail1">Email address</label>
+                              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                            </div>
+                            <div class="form-group">
+                              <label for="exampleInputPassword1">Password</label>
+                              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                            </div>
+                            <button type="submit" class="btn custom-btn-1 mt-3 mb-5">Log-in <i class="fas fa-sign-in-alt"></i></button>
+                          </form>
+                    </div>
+                    
+                    <div class="tab-pane fade show" id="nav-signup" role="tabpanel" aria-labelledby="nav-signup-tab">
+                        <form class="col-lg-12 mt-3">
+                            <div class="form-group">
+                              <label for="exampleInputEmail1">Username</label>
+                              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                            </div>
+                            <div class="form-group">
+                              <label for="exampleInputPassword1">Password</label>
+                              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                            </div>
+                            <div class="form-group">
+                              <label for="exampleInputPassword1">Confirm Password</label>
+                              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Confirm Password">
+                            </div>
+                            <button type="submit" class="btn custom-btn-2 mb-5">Sign-up<i class="fas fa-sign-in-alt"></i></button>
+                          </form>
+                      </div>
+                    </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 custom-foot">
+            <label class="text-light contact"><i class="fas fa-phone"></i>8426934278</label>
+            <a href="#" class="mail"><i class="fas fa-envelope"></i>deepeshrohilla211@gmail.com</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>     
+    <script>
+      $(document).ready(function(){
+
+        var checkScrollBar = function(){
+          $('.navbar').css({
+            boxShadow: $(this).scrollTop() > 50 ?
+              '0px 4px 10px -2px rgba(0, 0, 0, 0.582)':'none',
+            backgroundColor: $(this).scrollTop() > 50 ?
+              'rgba(255, 255, 255, 0.85)' : 'transparent'
+          })
+        }
+        $(window).on('load resize scroll', checkScrollBar)
+        });
+        AOS.init();
+    </script>
+  </body>
+</html>

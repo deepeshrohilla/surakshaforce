@@ -1,0 +1,196 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+::-webkit-scrollbar {
+    width: 5px;
+} 
+::-webkit-scrollbar-track {
+    background: rgb(255, 255, 255); 
+}  
+::-webkit-scrollbar-thumb {
+    background: rgb(4, 17, 41); 
+}
+
+.header{
+    width: 100%;
+    height: auto;
+    float: left;
+    position: fixed;
+    z-index: 1030;
+}
+.navbar{
+    background: transparent;
+    transition: background-color 0.4s ease-out;
+}
+.navbar-brand{
+    width: 50px;
+    height: 50px;
+    margin: 0px 0px 0px 20px;
+    padding: 0px;
+    background-image: url('../images/IMG_20190308_170804.jpg');
+    background-size: 100% 100%;
+}
+@media(max-width:720px){
+    .navbar{
+        background: rgba(255, 255, 255, 0.85) !important;
+    }
+}
+@media(max-width:480px){
+    .navbar{
+        background: rgba(255, 255, 255, 0.85) !important;
+    }
+}
+
+.nav-link{
+    font-size: 22px;
+    font-weight: bold;
+    font-variant: small-caps;
+    font-family: 'Poiret One', cursive;
+    color: rgb(68, 158, 194) !important;
+    margin-right: 20px;
+    padding: 0px;
+    display: inline-block;
+}
+.nav-link::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 4px;
+    background-color: rgb(68, 158, 194) ;
+    transition: width .3s;
+}
+.nav-link:hover::after{
+    width: 100%;
+}
+@font-face{
+    font-family: 'Poiret One', cursive;
+    src: url('../fonts-family/Ubuntu/Ubuntu-Light.ttf');
+}
+.fa-home{
+    font-size: 22px;
+    color: rgb(68, 158, 194);
+    padding: 0px 10px 0px 0px;
+}
+
+.section-2{
+    width: 100%;
+    height: auto;
+    float: left;
+    padding-bottom: 75px;
+    background: linear-gradient(180deg,rgb(2, 2, 129),rgb(253, 164, 128));
+    /* background-image: url('../images/Background\ 23.jpg'); */
+    background-size: 100% 100%;
+    overflow: hidden;
+}
+.custom-design{
+    margin-top: 75px;
+    background-color: rgb(255, 255, 255);
+    float: left;
+    overflow: hidden;
+}
+.custom-design-1{
+    background-image: url('/images/aid-care-close-up-1516645.jpg');
+    background-size: 100% 100%;
+    float: left;
+    -webkit-clip-path: polygon(0 0, 100% 0, 70% 50%, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 70% 50%, 100% 100%, 0 100%);
+    overflow: hidden;
+    margin-left: -15px;
+}
+@media (max-width:720px){
+    .custom-design-1{
+        margin-left: 0px;
+    }
+}
+@media (max-width:480px){
+    .custom-design-1{
+        margin-left: 0px;
+    }
+}
+.custom-design-2{
+    margin-top: 65px;
+    float: left;
+    overflow: hidden;
+}
+.custom-nav-1{
+    color: blue !important;
+    overflow: hidden;
+}
+.custom-nav-1::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 4px;
+    background-color: blue;
+    transition: width .3s;
+}
+.custom-nav-1:hover::after{
+    width: 100%;
+}
+.custom-btn-1{
+    font-size: 22px !important;
+    color: #fff !important;
+    background-color: blue !important;
+    box-shadow: 0px 7px 15px -4px rgb(32, 32, 255);
+}
+.fa-sign-in-alt{
+    color: #fff;
+    margin-left: 10px;
+}
+.custom-nav-2{
+    color: rgb(255, 128, 78) !important;
+}
+.custom-nav-2::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 4px;
+    background-color: rgb(255, 128, 78);
+    transition: width .3s;
+}
+.custom-nav-2:hover::after{
+    width: 100%;
+}
+.custom-btn-2{
+    font-size: 22px !important;
+    color: #fff !important;
+    background-color: rgb(255, 128, 78) !important;
+    box-shadow: 0px 7px 15px -4px rgb(134, 68, 41);
+}
+
+.footer{
+    width: 100%;
+    height: auto;
+    float: left;
+    background-color: rgb(4, 17, 41);
+}
+.custom-foot{
+    margin-top: 25px;
+    float: left;
+}
+.fa-phone{
+    color: #fff;
+    font-size: 30px;
+    transform: rotate(90deg);
+    margin-right: 10px;
+}
+.contact{
+    font-size: 30px;
+    color: #fff;
+    font-family: 'Poiret One', cursive;
+}
+.mail{
+    float: right;
+    font-size: 30px;
+    color: #fff;
+    font-family: 'Poiret One', cursive;
+}
+.mail:hover{
+    color: #fff;
+}
+.fa-envelope{
+    color: #fff;
+    font-size: 35px;
+    margin-right: 10px;
+}
